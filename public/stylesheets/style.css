@@ -1,0 +1,88 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.page_title{
+  width:300px;
+  font-size: 40px;
+  padding:30px 0px;
+  margin:10px auto;
+  background-color: grey;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px #CDCDCD;
+  color:white;
+}
+
+.thumbnail{
+  width:250px;
+  height: 350px;
+  margin:10px 20px;
+  dislay:flex;
+  flex-direction: column;
+  background-color: #D4D6DA;
+  border-radius: 15px;
+}
+
+.logo-thumb{
+  position: relative;
+  width:240px;
+  height: 200px;
+  margin: 0px auto;
+  padding-top:5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.thumb-content{
+  width:240px;
+  height: 140px;
+  margin:5px auto 0px auto;
+  display:flex;
+  flex-direction:column;
+}
+.thumb-text{
+  height: 93px;
+  width: 240px;
+  text-align:center;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.thumb-button{
+  border:1px solid #4C82EE;
+  border-radius:15px;
+  padding:5px 10px;
+  background-color: #4C82EE;
+  color:white;
+  text-decoration: none;
+  margin:0px 5px;
+}
+
+.price-tag{
+  position: relative;
+  display:block;
+  left:-50px;
+  max-width:66px;
+  overflow:hidden;
+}
+.main_panel{
+  padding-left: 10%;
+}

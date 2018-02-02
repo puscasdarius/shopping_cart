@@ -1,0 +1,63 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/">
+    <img src="/images/cart.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Shopping Cart
+  </a>
+  <ul class="nav justify-content-end">
+    <li>
+      {{# if name}}
+        {{name}}
+      {{/if}}
+    </li> 
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        User
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/user/signin">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          Sign In
+        </a>
+        <a class="dropdown-item" href="/user/signup">
+          <i class="fa fa-sign-in" aria-hidden="true"></i>
+          Sing Up
+        </a>
+        <a class="dropdown-item" href="/edit_products">
+          <i class="fa fa-file" aria-hidden="true"></i>
+          Profile
+        </a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        Shopping Cart
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        Product Manager
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="/add_products">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          Add Product
+        </a>
+        <a class="dropdown-item" href="/remove_products">
+          <i class="fa fa-minus" aria-hidden="true"></i>
+          Delete Procuct
+        </a>
+        <a class="dropdown-item" href="/edit_products">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          Edit Product
+        </a>
+        <a class="dropdown-item" href="/show_products">
+          <i class="fa fa-eye" aria-hidden="true"></i>
+          Show Products
+        </a>
+      </div>
+    </li>
+</ul>
+</nav>

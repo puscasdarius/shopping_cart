@@ -1,0 +1,27 @@
+<div class="main_panel">
+  {{#each products}}
+    <div class="row">
+      {{#each this}}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="{{this.imagePath}}" class="logo-thumb" alt="...">
+          <div class="thumb-content">
+            <p class="thumb-text">{{this.description}}</p>
+            <ul class="nav justify-content-end">
+              <li class="price-tag">
+                Price:{{this.price}}
+              </li>
+              <li class="nav-item">
+                <a class="thumb-button" href="/view_product/{{this.id}}">View</a>
+              </li>
+              <li class="nav-item">
+                <a class="thumb-button" href="#">Buy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>

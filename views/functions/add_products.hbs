@@ -1,0 +1,35 @@
+<h1 class="page_title">Add Products</h1>
+<div class="insert_panel">
+  {{#if warning}}
+    <div class="warning">
+      {{warning}}
+    </div>
+  {{/if}}
+  <form class="insert_form " action="/add_products" method="post">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Product Name</span>
+      </div>
+      <input type="text" class="form-control" name="product_name" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Product Description</span>
+      </div>
+      <input type="text" class="form-control" name="product_des" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">$</span>
+      </div>
+      <input type="text" class="form-control" name="product_price" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Product Image</span>
+      </div>
+      <input type="file" class="form-control" name="product_imagePath" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <button type="submit" class="btn btn-secondary float-md-rigth">Add Product</button>
+  </form>
+</div>

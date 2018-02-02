@@ -1,0 +1,25 @@
+<h1 class="page_title">Show Products</h1>
+<div class="row">
+    <div class="mx-auto col-md-10">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each products}}
+            <tr>
+              <td><img class="table-logo" src="{{this.imagePath}}" alt=""></td>
+              <td>{{this.name}}</td>
+              <td>{{this.description}}</td>
+              <td>{{this.price}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
